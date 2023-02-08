@@ -1,2 +1,2 @@
 cd /home/shali/Jmeter/apache-jmeter-5.5/bin
-sh jmeter -j jmeter.save.saveservice.output_format= xml -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
+sh jmeter -j jmeter.save.saveservice.output_format = xml -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
