@@ -1,2 +1,14 @@
-cd /home/shali/Jmeter/apache-jmeter-5.5/bin
-sh jmeter.sh -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
+pipeline{
+  agent any{
+     stages{
+        stage('Build Jmeter'){ 
+        steps{
+          
+           cd /home/shali/Jmeter/apache-jmeter-5.5/bin;
+          sh jmeter.sh -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
+          }
+        }
+      }
+    }
+   } 
+        
