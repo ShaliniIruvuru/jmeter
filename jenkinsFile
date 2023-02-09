@@ -5,9 +5,13 @@ pipeline{
         steps{
           
            cd /home/shali/Jmeter/apache-jmeter-5.5/bin
-           sh jmeter.sh -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
           }
         }
+        stage('Build job'){
+        steps{
+                   sh jmeter.sh -n -t jenkins_demo.jmx -l jenkins_demoreoprt.jtl
+             }
+         }    
       }
     
    } 
